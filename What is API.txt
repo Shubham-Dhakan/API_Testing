@@ -1,0 +1,22 @@
+
+API - is like connector between two services.
+      For eg1: In restuarant we send request to bring specific food, 
+      **NOTE**- "waiter" takes our request into kitchen to get specific food.
+
+      **NOTE**- waiter acts as "API" which takes client request to database(kitchen) 
+		and "API" brings back the response(food) from database(kitchen) to client.
+
+Thus, API is known or works as < Buisness Logic >.
+
+Also lets say client is using some different language and server(database) is operating on different language 
+
+*****NOTE***** API does the middle work to understand the both the languages(buisness logic), 
+
+and take the client "request" --> gives "response" from (database) in feedback.   
+
+
+
+DEFINATION 2:
+---------------------------------------
+API lets software applications(chrome browser) to communicate with other websites(youtube) and webapplications for additionally functionality.  
+ 
