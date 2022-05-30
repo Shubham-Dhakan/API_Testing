@@ -1,0 +1,31 @@
+REQUEST TO BE CHECKED WHILE DOING API TESTING:
+------------------------------------------------------------------>
+This all requests are supported by RESTFUL
+ 
+GET (select)			
+POST (create) ----------------> Whenever we use 'POST' we have to pass < REQUEST BODY > & < REQUEST PAYLOAD >
+PUT (update) -----------------> Whenever we use 'PUT' we have to pass < REQUEST BODY > & < REQUEST PAYLOAD >
+DELETE (delete)
+--------------------------------------------------------------------------------------------------------------->
+
+NOTE: 
+1.) Whenever you are creating (POST) something on existing " API ---> url: http:// "
+
+    In POSTMAN we have to enter data manually through request < REQUEST BODY > & < REQUEST PAYLOAD >
+
+2.) Whenever you are updating (PUT) something on existing "API --> url: hhtp://"
+
+    In POSTMAN we have to enter data manually through request < REQUEST BODY > & < REQUEST PAYLOAD >
+
+3.) Use (GET) Whenever we want to fetch data from existing " API ---> url: http:// "  
+    We dont have to use < REQUEST BODY > & < REQUEST PAYLOAD > over in here. 
+	
+---------------------------------------------------------------------------------------------------------------->
+
+* What is REST API? 
+  Rest API = Representational State Transfer
+  
+  Follows HTTP request method:
+  GET | POST | PUT | DELETE
+ 
+  Data can be represented in JSON, XML, YAML or another format.   
