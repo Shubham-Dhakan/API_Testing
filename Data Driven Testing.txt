@@ -1,0 +1,26 @@
+WHAT IS DATA DRIVEN TESTING?
+--------------------------------->
+
+Breif Description:
+Data driven testing is a testing carried through spreadsheet or some table in which multiple data is stored all ready which can be 
+tested at a single shot rather than testing individual test-cases again and again. 
+
+FILE TYPES:- .XML, .JSON, .CSV
+ 
+CONCLUSION:
+----------------->
+
+1) Data-driven is a test automation framework which stores test data in a table or spread spreadsheet format.
+
+2) In Data-driven test automation framework, input data can be stored in single or multiple data sources like xls, XML, csv, and databases.
+
+3) To create an individual test for each data set is a lengthy and time-consuming process,
+   Data Driven Testing framework resolves this issue by keeping the data separate from Functional tests.
+
+4) In Data Driven Testing, it is an ideal option to use realistic information
+
+5) It allows testing application with multiple sets of data values during Regression testing
+
+6) Drawback of this method is that it is depended on the automation skills of the Implementing team
+
+
