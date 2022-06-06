@@ -1,0 +1,33 @@
+1) Install Node.js
+----------------------->
+
+2) Install npm but it comes along with Node.js 
+------------------------------------------------> 
+
+3) Install JSON server - Most important part for creating and running FAKE API'S
+----------------------------------------------------------------------------------> 
+
+4) Create one JSON file with JSON format in your local machine or convert CSV file --> json file through GOOGLE converters
+----------------------------------------------------------------------------------------------------------------------------->
+
+5) RUN this command                  < json-server 	info.json >                        info.json is example file 
+------------------------------------------------------------------------------------------------------------------------> 
+
+
+NOTE: After running this command in command prompt, keep command prompt open or else created API will not work. 
+This command in command prompt will create FAKE API so keep command prompt open in background. 
+
+
+
+NOW, perform HTTP requests on this fake API'S through POSTMAN:
+
+GET
+POST
+PUT 
+DEL   
+
+Then through RUNNER < option > in < POSTMAN >: 
+-------------------------------------------------->
+
+RUN all HTTP request of specific collection at once through RUNNER. 
+ 
