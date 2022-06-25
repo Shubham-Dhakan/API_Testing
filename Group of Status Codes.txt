@@ -1,0 +1,9 @@
+Informational (1xx) - request is received and understood, can be processed. Alert a client to wait for response.
+
+Success (2xx) - request was received, understood, accepted and response is generated. 
+
+Redirection (3xx) - further actions are needed. Returned if a resource was moved permanently and temporary and can be accessed via another URL.
+
+Client Error (4xx) - client has generated invalidrequest and server cannot proccess it.
+
+Servor Error (5xx) - server fails to fulfill a valid request, although the request from the client is correct.
