@@ -1,0 +1,28 @@
+API Chaining Concept:
+------------------------->
+
+STEP1: 
+------> 
+For eg: We will create two HTTP requests:
+	1. GET
+	2. PUT
+
+STEP2:
+------->
+Create Test case in "GET" request
+
+TestCase:
+
+jsondata=JSON.parse(responseBody);	# JSON.parse(responseBody) will copy entire api response in << jsondata >> (variable)
+value = jsondata.data[1].first_name;	# calling and storing the specific user from the group of users in value (variable). 
+pm.globals.set("username",value);	# we will set the global variable from GET <<testcase >>
+				        # which will get used in "2" request PUT.  	
+
+ STEP3:
+---------->
+Update body in << request section >> in -------------> "PUT" request
+
+by using the global variable in the request body of << PUT >> request it is called api chaining. 
+As we have set new global variable in the "" test case "" of previous request << GET >>
+
+NOTE: Concept is using the input of input of first request  in another is known as api chaining.    
