@@ -1,0 +1,25 @@
+WHAT IS Authorization in POSTMAN: 
+----------------------------------->
+All the methods below are for understanding why&what is AUTHORIZATION is POSTMAN. 
+
+1) Basic Auth - For eg: 
+------------------------------>
+			We are trying to fetch some data through GET HTTP request method,
+			but that < GET > method needs authorization before getting called. 
+			<<<< username: , password: >>>> 
+			After entering them we can get the data of GET req.
+
+2) API KEY - For eg: 
+------------------------------>
+		     Some GET | POST | PUT request needs api keys to perform 
+		     any HTTP request. 
+
+		     After entering the API key we can perform our desired actions,
+		     through HTTP req methods. 
+
+3) Bearer Token / Oauth 2.0:
+------------------------------->
+		     GIT repositories uses Bearer Token, so copy --> token,
+		     2) In postman --> Authorization Section 
+		     3) Select Token Method --> Paste the Git token 
+		     4) To work with git API we need this tokens (if needed)       
