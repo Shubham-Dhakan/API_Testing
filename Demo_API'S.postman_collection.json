@@ -1,0 +1,153 @@
+{
+	"info": {
+		"_postman_id": "495076e1-4ada-41a2-aaa3-50b60d1bbdc3",
+		"name": "Demo_API'S",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21077616"
+	},
+	"item": [
+		{
+			"name": "Returns lists of Users in a page",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"tests[\"validation status code\"] = responseCode.code == 200;\r",
+							"var response = JSON.parse(responseBody);\r",
+							"\r",
+							"tests[\"verifying first_name:\"] = responseBody.has(\"Michael\");\r",
+							"tests[\"verifying last_name:\"] = responseBody.has(\"Lawson\");"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://reqres.in/api/users?page=2",
+					"protocol": "http",
+					"host": [
+						"reqres",
+						"in"
+					],
+					"path": [
+						"api",
+						"users"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Verfiy's and Returns single User",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"var response = JSON.parse(responseBody);\r",
+							"tests[\"returns single user:\"] = responseBody.has(\"Janet\");\r",
+							"tests[\"returns single user:\"] = responseBody.has(\"Weaver\");"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://reqres.in/api/users/2",
+					"protocol": "http",
+					"host": [
+						"reqres",
+						"in"
+					],
+					"path": [
+						"api",
+						"users",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Creating User Data through post request",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"var response = JSON.parse(responseBody);\r",
+							"tests[\"name status:\"] = response.name == \"shubham\";\r",
+							"tests[\"age status:\"] = response.age == \"23\";\r",
+							"tests[\"salary status\"] = response.salary == \"217000\";\r",
+							""
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\":\"shubham\",\"salary\":\"217000\",\"age\":\"23\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://dummy.restapiexample.com/api/v1/create",
+					"protocol": "https",
+					"host": [
+						"dummy",
+						"restapiexample",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://dummy.restapiexample.com/api/v1/employees",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://dummy.restapiexample.com/api/v1/employees",
+					"protocol": "https",
+					"host": [
+						"dummy",
+						"restapiexample",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"employees"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,11 @@
+EXPORTING AND IMPORTING Collections in POSTMAN: 
+--------------------------------------------------->
+
+1) Export collection as File and Import as file
+2) Export collection to a folder and Import Collection to a folder
+3) Share Collection -> Get Public link then import as link
+4) Import as Raw Text --> Curl Command --> Import
+
+Curl Concept: is a command line interface for transfering the data via uRLS
+	      When it comes to REST APIS, we can use Postman as a GUI (graphical user interface) 
+	      and cURL as command line interface to perform tasks. 
